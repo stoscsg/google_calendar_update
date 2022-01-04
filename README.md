@@ -1,2 +1,3 @@
-# google_calendar_update
-Script to update Google calendar with church services
+# Overview
+
+A script to update the Church calendar with service dates and timings
