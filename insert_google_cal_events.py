@@ -98,7 +98,7 @@ def insert_event(title, start, description):
 
 
     event = {
-        "summary": title,
+        "summary": f"STOSC: {title}",
         "location": "650 Yio Chu Kang Rd, Singapore 787075",
         "description": description,
         "start": {"dateTime": start_time},
@@ -114,7 +114,7 @@ def insert_event(title, start, description):
     # calendarId='primary' for the main Calendar.
     # Get IDs from https://developers.google.com/calendar/api/v3/reference/calendarList/list
     event = service.events().insert(calendarId="xxx@group.calendar.google.com", body=event).execute()
-    print(f"Event created: {title}  [{start}]")
+    print(f"Event created: STOSC: {title} - [{start}]")
 
 
 if __name__ == "__main__":
